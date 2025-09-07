@@ -1,14 +1,11 @@
-// vite.config.ts (ou .js)
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import { VitePWA } from 'vite-plugin-pwa';
 import CONFIG from './gitprofile.config';
 import { createHtmlPlugin } from 'vite-plugin-html';
 
-const repoBase = '/gitprofile/';
-
 export default defineConfig(({ mode }) => ({
-  base: '/portfolio/',   
+  base: '/portfolio/',
   plugins: [
     react(),
     createHtmlPlugin({
@@ -28,15 +25,30 @@ export default defineConfig(({ mode }) => ({
       ? [
           VitePWA({
             registerType: 'autoUpdate',
-            injectRegister: 'auto',        // important pour générer/ajouter registerSW.js
-            workbox: { navigateFallback: undefined },
-            includeAssets: ['logo.png', 'favicon.ico', 'apple-touch-icon.png'],
+            injectRegister: 'auto',
+            workbox: { 
+              navigateFallback: undefined,
+              globPatterns: ['**/*.{js,css,html,ico,png,svg,webp,jpg,jpeg}']
+            },
+            includeAssets: ['favicon.ico', 'apple-touch-icon.png'],
             manifest: {
               name: 'Portfolio',
               short_name: 'Portfolio',
               description: 'Personal Portfolio',
+              theme_color: '#ffffff',
+              background_color: '#ffffff',
+              display: 'standalone',
               icons: [
-                { src: 'logo.png', sizes: '64x64 32x32 24x24 16x16 192x192 512x512', type: 'image/png' },
+                {
+                  src: 'pwa-192x192.png',
+                  sizes: '192x192',
+                  type: 'image/png',
+                },
+                {
+                  src: 'pwa-512x512.png',
+                  sizes: '512x512',
+                  type: 'image/png',
+                },
               ],
             },
           }),
@@ -44,4 +56,12 @@ export default defineConfig(({ mode }) => ({
       : []),
   ],
   define: { CONFIG },
+  build: {
+    assetsDir: 'assets',
+    rollupOptions: {
+      output: {
+        manualChunks: undefined,
+      },
+    },
+  },
 }));
