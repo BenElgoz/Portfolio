@@ -8,7 +8,7 @@ import { createHtmlPlugin } from 'vite-plugin-html';
 const repoBase = '/gitprofile/';
 
 export default defineConfig(({ mode }) => ({
-  base: process.env.GITHUB_ACTIONS ? repoBase : (CONFIG.base || '/'),
+  base: '/portfolio/',   
   plugins: [
     react(),
     createHtmlPlugin({

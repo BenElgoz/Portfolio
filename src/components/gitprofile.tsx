@@ -106,9 +106,9 @@ const GitProfile = ({ config }: { config: Config }) => {
 
       setProfile({
         avatar: data.avatar_url,
-        name: "Benjamin Bonnevial" || ' ',
+        name: "Benjamin Bonnevial",
         bio: data.bio || '',
-        location: "Paris" || '',
+        location: "Paris",
         company: data.company || '',
       });
 
