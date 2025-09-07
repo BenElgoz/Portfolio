@@ -13,11 +13,11 @@ const CONFIG = {
   projects: {
     github: {
       display: true, // Display GitHub projects?
-      header: 'Projets GitHub',
+      header: 'Quelques projets GitHub',
       mode: 'automatic', // Mode can be: 'automatic' or 'manual'
       automatic: {
         sortBy: 'stars', // Sort projects by 'stars' or 'updated'
-        limit: 8, // How many projects to display.
+        limit: 6, // How many projects to display.
         exclude: {
           forks: false, // Forked projects will not be displayed if set to true.
           projects: [], // These projects will not be displayed. example: ['arifszn/my-project1', 'arifszn/my-project2']
@@ -33,20 +33,36 @@ const CONFIG = {
       // To hide the `External Projects` section, keep it empty.
       projects: [
         {
-          title: 'Project Name',
+          title: 'Projet interne TotalEnergies',
           description:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut.',
+            'Grand projet international concernant la sécurité. Les langages que j\'ai pu utiliser étaient Angular et Nest.js. La gestion de projet comprenait la méthode agil SCRUM.',
           imageUrl:
-            'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
-          link: 'https://example.com',
+            'https://upload.wikimedia.org/wikipedia/fr/f/f7/Logo_TotalEnergies.svg',
+          // link: 'https://landing.ratos.fr',
         },
         {
-          title: 'Project Name',
+          title: 'Ratos',
           description:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut.',
+            'Projet d\'école réalisé dans le cadre du My Digital Project 2025, dans une équipe où j\'étais le seul développeur, j\'ai utilisé React.js et Node / Express. ',
           imageUrl:
-            'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
-          link: 'https://example.com',
+            'https://benelgoz.github.io/Portfolio/gitprofile/logo_ratos.svg',
+          link: 'https://github.com/BenElgoz/Ratos',
+        },
+        {
+          title: 'Young Leader School',
+          description:
+            'Réalisation d\'un site vitrine pour une école complémentaire. J\'ai pu faire le maquettage et la version définitive avec l\'outil low-code Framer ',
+          imageUrl:
+            'https://benelgoz.github.io/Portfolio/gitprofile/logo_yls.png',
+          link: 'https://www.youngleaderschool.com/',
+        },
+        {
+          title: 'Netflix-Clone',
+          description:
+            'Projet personnel reprenant le design et concept de Netflix, en récupérant les films et séries par une API externe. Réalisé avec React.js.',
+          imageUrl:
+            'https://static.vecteezy.com/system/resources/previews/017/396/804/non_2x/netflix-mobile-application-logo-free-png.png',
+          link: 'https://github.com/BenElgoz/Netflix-Clone',
         },
       ],
     },
@@ -75,7 +91,7 @@ const CONFIG = {
   },
   resume: {
     fileUrl:
-      'https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf', // Empty fileUrl will hide the `Download Resume` button.
+      'https://benelgoz.github.io/Portfolio/gitprofile/CV_Benjamin_Bonnevial.pdf', // Empty fileUrl will hide the `Download Resume` button.
   },
   skills: [
     'HTML',
@@ -140,38 +156,38 @@ const CONFIG = {
     },
   ],
   publications: [
-    {
-      title: 'Publication Title',
-      conferenceName: '',
-      journalName: 'Journal Name',
-      authors: 'John Doe, Jane Smith',
-      link: 'https://example.com',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-    },
-    {
-      title: 'Publication Title',
-      conferenceName: 'Conference Name',
-      journalName: '',
-      authors: 'John Doe, Jane Smith',
-      link: 'https://example.com',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-    },
+    // {
+    //   title: 'Publication Title',
+    //   conferenceName: '',
+    //   journalName: 'Journal Name',
+    //   authors: 'John Doe, Jane Smith',
+    //   link: 'https://example.com',
+    //   description:
+    //     'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+    // },
+    // {
+    //   title: 'Publication Title',
+    //   conferenceName: 'Conference Name',
+    //   journalName: '',
+    //   authors: 'John Doe, Jane Smith',
+    //   link: 'https://example.com',
+    //   description:
+    //     'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+    // },
   ],
   // Display articles from your medium or dev account. (Optional)
-  blog: {
-    source: 'dev', // medium | dev
-    username: 'arifszn', // to hide blog section, keep it empty
-    limit: 2, // How many articles to display. Max is 10.
-  },
+  // blog: {
+  //   source: 'dev', // medium | dev
+  //   username: 'arifszn', // to hide blog section, keep it empty
+  //   limit: 2, // How many articles to display. Max is 10.
+  // },
   googleAnalytics: {
     id: '', // GA3 tracking id/GA4 tag id UA-XXXXXXXXX-X | G-XXXXXXXXXX
   },
   // Track visitor interaction and behavior. https://www.hotjar.com
   hotjar: { id: '', snippetVersion: 6 },
   themeConfig: {
-    defaultTheme: 'lofi',
+    defaultTheme: 'dark',
 
     // Hides the switch in the navbar
     // Useful if you want to support a single color mode
@@ -186,42 +202,33 @@ const CONFIG = {
 
     // Available themes. To remove any theme, exclude from here.
     themes: [
-      'light',
-      'dark',
-      'cupcake',
-      'bumblebee',
-      'emerald',
-      'corporate',
-      'synthwave',
-      'retro',
-      'cyberpunk',
-      'valentine',
-      'halloween',
-      'garden',
-      'forest',
-      'aqua',
-      'lofi',
-      'pastel',
-      'fantasy',
-      'wireframe',
-      'black',
-      'luxury',
-      'dracula',
-      'cmyk',
-      'autumn',
-      'business',
-      'acid',
-      'lemonade',
-      'night',
-      'coffee',
-      'winter',
-      'dim',
-      'nord',
-      'sunset',
-      'caramellatte',
-      'abyss',
-      'silk',
-      'procyon',
+      // 'clair',
+      // 'sombre',
+      // 'cupcake',
+      // 'émeraude',
+      // 'retro',
+      // 'cyberpunk',
+      // 'halloween',
+      // 'garden',
+      // 'forest',
+      // 'aqua',
+      // 'luxury',
+      // 'dracula',
+      // 'cmyk',
+      // 'autumn',
+      // 'business',
+      // 'acid',
+      // 'lemonade',
+      // 'night',
+      // 'coffee',
+      // 'winter',
+      // 'dim',
+      // 'nord',
+      // 'sunset',
+      // 'caramellatte',
+      // 'abyss',
+      // 'silk',
+      // 'procyon',
     ],
   },
 

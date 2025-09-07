@@ -13,7 +13,7 @@ import { getInitialTheme, getSanitizedConfig, setupHotjar } from '../utils';
 import { SanitizedConfig } from '../interfaces/sanitized-config';
 import ErrorPage from './error-page';
 import { DEFAULT_THEMES } from '../constants/default-themes';
-import ThemeChanger from './theme-changer';
+// import ThemeChanger from './theme-changer';
 import { BG_COLOR } from '../constants';
 import AvatarCard from './avatar-card';
 import { Profile } from '../interfaces/profile';
@@ -26,7 +26,7 @@ import { GithubProject } from '../interfaces/github-project';
 import GithubProjectCard from './github-project-card';
 import ExternalProjectCard from './external-project-card';
 import BlogCard from './blog-card';
-import Footer from './footer';
+// import Footer from './footer';
 import PublicationCard from './publication-card';
 
 /**
@@ -106,9 +106,9 @@ const GitProfile = ({ config }: { config: Config }) => {
 
       setProfile({
         avatar: data.avatar_url,
-        name: data.name || ' ',
+        name: "Benjamin Bonnevial" || ' ',
         bio: data.bio || '',
-        location: data.location || '',
+        location: "Paris" || '',
         company: data.company || '',
       });
 
@@ -191,14 +191,6 @@ const GitProfile = ({ config }: { config: Config }) => {
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 rounded-box">
               <div className="col-span-1">
                 <div className="grid grid-cols-1 gap-6">
-                  {!sanitizedConfig.themeConfig.disableSwitch && (
-                    <ThemeChanger
-                      theme={theme}
-                      setTheme={setTheme}
-                      loading={loading}
-                      themeConfig={sanitizedConfig.themeConfig}
-                    />
-                  )}
                   <AvatarCard
                     profile={profile}
                     loading={loading}
@@ -275,7 +267,7 @@ const GitProfile = ({ config }: { config: Config }) => {
               </div>
             </div>
           </div>
-          {sanitizedConfig.footer && (
+          {/* {sanitizedConfig.footer && (
             <footer
               className={`p-4 footer ${BG_COLOR} text-base-content footer-center`}
             >
@@ -283,7 +275,7 @@ const GitProfile = ({ config }: { config: Config }) => {
                 <Footer content={sanitizedConfig.footer} loading={loading} />
               </div>
             </footer>
-          )}
+          )} */}
         </>
       )}
     </div>

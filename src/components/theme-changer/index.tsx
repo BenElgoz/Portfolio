@@ -51,14 +51,14 @@ const ThemeChanger = ({
                 className: 'mb-1',
               })
             ) : (
-              <span className="text-base-content opacity-70">Theme</span>
+              <span className="text-base-content opacity-70">Thème</span>
             )}
           </h5>
           <span className="text-base-content/50 capitalize text-sm">
             {loading
               ? skeleton({ widthCls: 'w-16', heightCls: 'h-5' })
               : theme === themeConfig.defaultTheme
-                ? 'Default'
+                ? 'Sombre'
                 : theme}
           </span>
         </div>

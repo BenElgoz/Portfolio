@@ -148,11 +148,11 @@ const ExternalProjectCard = ({
                       ? skeleton({ widthCls: 'w-40', heightCls: 'h-8' })
                       : header}
                   </h3>
-                  <div className="text-base-content/60 text-xs sm:text-sm mt-1 truncate">
+                  {/* <div className="text-base-content/60 text-xs sm:text-sm mt-1 truncate">
                     {loading
                       ? skeleton({ widthCls: 'w-32', heightCls: 'h-4' })
                       : `Showcasing ${externalProjects.length} projects`}
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>
