@@ -5,7 +5,7 @@ import CONFIG from './gitprofile.config';
 import { createHtmlPlugin } from 'vite-plugin-html';
 
 export default defineConfig(({ mode }) => ({
-  base: '/portfolio/',
+  base: '/Portfolio/',
   plugins: [
     react(),
     createHtmlPlugin({
