@@ -45,7 +45,7 @@ const CONFIG = {
           description:
             'Projet d\'école réalisé dans le cadre du My Digital Project 2025, dans une équipe où j\'étais le seul développeur, j\'ai utilisé React.js et Node / Express. ',
           imageUrl:
-            'https://benelgoz.github.io/Portfolio/gitprofile/logo_ratos.svg',
+            'https://benelgoz.github.io/Portfolio/logo_ratos.svg',
           link: 'https://github.com/BenElgoz/Ratos',
         },
         {
@@ -53,7 +53,7 @@ const CONFIG = {
           description:
             'Réalisation d\'un site vitrine pour une école complémentaire. J\'ai pu faire le maquettage et la version définitive avec l\'outil low-code Framer ',
           imageUrl:
-            'https://benelgoz.github.io/Portfolio/gitprofile/logo_yls.png',
+            'https://benelgoz.github.io/Portfolio/logo_yls.png',
           link: 'https://www.youngleaderschool.com/',
         },
         {
@@ -91,7 +91,7 @@ const CONFIG = {
   },
   resume: {
     fileUrl:
-      'https://benelgoz.github.io/Portfolio/gitprofile/CV_Benjamin_Bonnevial.pdf', // Empty fileUrl will hide the `Download Resume` button.
+      'https://benelgoz.github.io/Portfolio/Benjamin_Bonnevial_CV.pdf', // Empty fileUrl will hide the `Download Resume` button.
   },
   skills: [
     'HTML',
