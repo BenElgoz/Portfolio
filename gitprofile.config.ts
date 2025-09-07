@@ -2,7 +2,7 @@
 
 const CONFIG = {
   github: {
-    username: 'arifszn', // Your GitHub org/user name. (This is the only required config)
+    username: 'BenElgoz', // Your GitHub org/user name. (This is the only required config)
   },
   /**
    * If you are deploying to https://<USERNAME>.github.io/, for example your repository is at https://github.com/arifszn/arifszn.github.io, set base to '/'.
@@ -13,7 +13,7 @@ const CONFIG = {
   projects: {
     github: {
       display: true, // Display GitHub projects?
-      header: 'Github Projects',
+      header: 'Projets GitHub',
       mode: 'automatic', // Mode can be: 'automatic' or 'manual'
       automatic: {
         sortBy: 'stars', // Sort projects by 'stars' or 'updated'
@@ -29,7 +29,7 @@ const CONFIG = {
       },
     },
     external: {
-      header: 'My Projects',
+      header: 'Mes projets',
       // To hide the `External Projects` section, keep it empty.
       projects: [
         {
@@ -51,11 +51,11 @@ const CONFIG = {
       ],
     },
   },
-  seo: { title: 'Portfolio of Ariful Alam', description: '', imageURL: '' },
+  seo: { title: 'Portfolio de Benjamin Bonnevial', description: '', imageURL: '' },
   social: {
-    linkedin: 'ariful-alam',
-    x: 'arif_szn',
-    mastodon: 'arifszn@mastodon.social',
+    linkedin: 'benjamin-bonnevial',
+    // x: 'arif_szn',
+    // mastodon: 'arifszn@mastodon.social',
     researchGate: '',
     facebook: '',
     instagram: '',
@@ -65,71 +65,78 @@ const CONFIG = {
     udemy: '',
     dribbble: '',
     behance: '',
-    medium: 'arifszn',
-    dev: 'arifszn',
+    // medium: 'arifszn',
+    // dev: 'arifszn',
     stackoverflow: '', // example: '1/jeff-atwood'
     discord: '',
     telegram: '',
-    website: 'https://www.arifszn.com',
-    phone: '',
-    email: 'arifulalamszn@gmail.com',
+    phone: '+33 6 59 57 36 89',
+    email: 'benjamin.bonnevial@gmail.com',
   },
   resume: {
     fileUrl:
       'https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf', // Empty fileUrl will hide the `Download Resume` button.
   },
   skills: [
-    'PHP',
-    'Laravel',
+    'HTML',
+    'CSS',
     'JavaScript',
+    'TypeScript',
+    'Sass',
+    'Tailwind',
     'React.js',
+    'Angular',
+    'Next.js',
     'Node.js',
     'Nest.js',
+    'Express.js',
+    'PHP',
     'MySQL',
     'PostgreSQL',
+    'CakePHP',
     'Git',
+    'GitHub',
     'Docker',
-    'PHPUnit',
-    'CSS',
-    'Antd',
-    'Tailwind',
+    'Wordpress',
+    'Framer',
+    'Figma',
   ],
   experiences: [
     {
-      company: 'Company Name',
-      position: 'Position',
-      from: 'September 2021',
-      to: 'Present',
-      companyLink: 'https://example.com',
+      company: 'TotalEnergies',
+      position: 'Alternant Software Engineer',
+      from: 'Octobre 2024',
+      to: 'Septembre 2025',
+      // companyLink: 'https://example.com',
     },
     {
-      company: 'Company Name',
-      position: 'Position',
-      from: 'July 2019',
-      to: 'August 2021',
-      companyLink: 'https://example.com',
+      company: 'Young Leader School',
+      position: 'Stagiaire Développeur Front-End Low-Code',
+      from: 'Avril 2024',
+      to: 'Juin 2024',
+      companyLink: 'https://www.youngleaderschool.com/',
     },
   ],
   certifications: [
     {
-      name: 'Lorem ipsum',
-      body: 'Lorem ipsum dolor sit amet',
-      year: 'March 2022',
-      link: 'https://example.com',
+      name: 'Bachelor Concepteur développeur d\'applications',
+      body: 'Titre RNCP 37873 de niveau 6',
+      year: 'Août 2025',
+      link: 'https://www.francecompetences.fr/recherche/rncp/37873/',
     },
   ],
   educations: [
     {
-      institution: 'Institution Name',
-      degree: 'Degree',
-      from: '2015',
-      to: '2019',
+      institution: 'MBA Développeur Full-Stack',
+      // degree: 'Degree',
+      from: '2025',
+      to: '2027',
     },
     {
-      institution: 'Institution Name',
-      degree: 'Degree',
-      from: '2012',
-      to: '2014',
+      institution: 'Bachelor Développeur Web',
+      // degree: 'Degree',
+      from: '2022',
+      to: '2025',
     },
   ],
   publications: [
